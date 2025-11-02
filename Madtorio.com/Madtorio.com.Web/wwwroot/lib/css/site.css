@@ -1,0 +1,192 @@
+/* Factorio-inspired global styles for Madtorio.com */
+
+:root {
+    --factorio-orange: #ff6d00;
+    --factorio-orange-light: #ffa64d;
+    --factorio-orange-dark: #cc5700;
+    --factorio-bg-dark: #0d0d0d;
+    --factorio-bg-medium: #1a1a1a;
+    --factorio-bg-light: #2a2a2a;
+    --factorio-text: #e0e0e0;
+    --factorio-text-dim: #b0b0b0;
+    --factorio-border: #3a3a3a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--factorio-bg-medium);
+    color: var(--factorio-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--factorio-orange);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--factorio-orange);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+p {
+    line-height: 1.6;
+    color: var(--factorio-text);
+}
+
+a {
+    color: var(--factorio-orange);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--factorio-orange-light);
+}
+
+/* Button styles */
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: var(--factorio-orange);
+    color: #000;
+    border: 2px solid var(--factorio-orange);
+}
+
+.btn-primary:hover {
+    background-color: var(--factorio-orange-light);
+    border-color: var(--factorio-orange-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 109, 0, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: var(--factorio-bg-dark);
+    border: 2px solid var(--factorio-border);
+    margin-top: 1rem;
+}
+
+.table thead {
+    background-color: var(--factorio-bg-light);
+}
+
+.table th {
+    color: var(--factorio-orange);
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 2px solid var(--factorio-orange);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--factorio-border);
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 109, 0, 0.05);
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Content area */
+.content {
+    background-color: var(--factorio-bg-medium);
+    min-height: calc(100vh - 3.5rem);
+}
+
+/* Code blocks */
+code {
+    background-color: var(--factorio-bg-dark);
+    color: var(--factorio-orange-light);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Text colors */
+.text-danger {
+    color: #ff4444;
+}
+
+/* Loading indicator */
+em {
+    color: var(--factorio-text-dim);
+    font-style: italic;
+}
+
+/* Page title */
+.PageTitle {
+    display: none;
+}
+
+/* Status text */
+[role="status"] {
+    color: var(--factorio-text);
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+/* Error page styles */
+.text-danger {
+    color: #ff4444;
+}
+
+strong {
+    color: var(--factorio-orange);
+    font-weight: 600;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--factorio-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--factorio-bg-light);
+    border: 2px solid var(--factorio-bg-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--factorio-orange-dark);
+}
