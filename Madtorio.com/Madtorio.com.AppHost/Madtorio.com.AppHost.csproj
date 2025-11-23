@@ -4,7 +4,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UserSecretsId>46c545be-be9d-4d46-8070-bd0935897907</UserSecretsId>
@@ -17,8 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.0" />
-    <PackageReference Include="Aspire.Hosting.Redis" Version="9.5.0" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="13.0.0" />
+    <PackageReference Include="Aspire.Hosting.Docker" Version="13.0.0-preview.1.25560.3" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="13.0.0" />
   </ItemGroup>
 
 </Project>
