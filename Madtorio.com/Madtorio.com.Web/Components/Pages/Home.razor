@@ -2,67 +2,34 @@
 
 <PageTitle>Home</PageTitle>
 
-<div style="max-width: 1200px;">
-    <h1>Welcome to Madtorio</h1>
-
-    <div style="background-color: #0d0d0d; padding: 2rem; border-left: 4px solid #ff6d00; margin: 2rem 0;">
-        <h2 style="margin-top: 0; color: #ffa64d;">🏭 Factorio Community Server</h2>
-        <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-            Join our community-driven Factorio server and build massive factories with fellow engineers!
-        </p>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-            <div style="background-color: #1a1a1a; padding: 1.5rem; border: 1px solid #2a2a2a;">
-                <h3 style="color: #ff6d00; margin-top: 0;">Server Connection</h3>
-                <p><strong>IP:</strong> <code style="font-size: 1.1rem;">192.67.197.11</code></p>
-                <p><strong>Domain:</strong> <code style="font-size: 1.1rem;">madtorio.com</code></p>
-            </div>
-            
-            <div style="background-color: #1a1a1a; padding: 1.5rem; border: 1px solid #2a2a2a;">
-                <h3 style="color: #ff6d00; margin-top: 0;">Join Discord</h3>
-                <p>Connect with the community!</p>
-                <a href="https://tinyurl.com/madtorio-server" target="_blank" style="display: inline-block; margin-top: 0.5rem; padding: 0.75rem 1.5rem; background-color: #ff6d00; color: #000; font-weight: bold; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.5px;">
-                    Join Server
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div style="margin-top: 3rem;">
-        <h2>About Madtorio</h2>
-        <p style="font-size: 1.05rem; line-height: 1.8;">
-            Madtorio is a dedicated Factorio community where players come together to design, build, and optimize massive automated factories. 
-            Whether you're a seasoned engineer with thousands of hours or just starting your automation journey, you'll find a welcoming 
+<div class="grid-homepage">
+<div class="panel box-about m0 flex-column">
+    <h2>Welcome to Madtorio</h2>
+    <div class="panel-inset-lighter m0 flex-column flex-space-evenly">
+        <p> Madtorio is a dedicated Factorio community where players come together to design, build, and optimize massive automated factories.</p>
+        <p>
+            Whether you're a seasoned engineer with thousands of hours or just starting your automation journey, you'll find a welcoming
             community ready to collaborate, share designs, and tackle the challenges of industrial expansion.
         </p>
     </div>
-
-    <div style="margin-top: 3rem; background-color: #0d0d0d; padding: 2rem; border: 2px solid #2a2a2a;">
-        <h2 style="margin-top: 0;">🚀 Coming Soon</h2>
-        <ul style="list-style: none; padding: 0;">
-            <li style="padding: 0.5rem 0; border-bottom: 1px solid #2a2a2a;">
-                <span style="color: #ff6d00;">▸</span> Real-time server status and player count
-            </li>
-            <li style="padding: 0.5rem 0; border-bottom: 1px solid #2a2a2a;">
-                <span style="color: #ff6d00;">▸</span> Gallery of previous community bases
-            </li>
-            <li style="padding: 0.5rem 0; border-bottom: 1px solid #2a2a2a;">
-                <span style="color: #ff6d00;">▸</span> Blueprint library with search and sharing
-            </li>
-            <li style="padding: 0.5rem 0;">
-                <span style="color: #ff6d00;">▸</span> Community suggestions and voting system
-            </li>
-        </ul>
+    <div class="panel-inset text-right mb0 p4 fs0">
+        Check out our
+        <a href="https://tinyurl.com/madtorio-server" class="button-green-right">Discord server</a>
     </div>
 </div>
-
-<style>
-    code {
-        background-color: #2a2a2a;
-        padding: 0.3rem 0.6rem;
-        border-radius: 3px;
-        font-family: 'Courier New', monospace;
-        color: #ffa64d;
-        font-size: 0.95em;
-    }
-</style>
+<Server_info/>
+<div class="panel box-comming-soon m0 flex-column">
+    <h2> comming soon</h2>
+    <div class="panel-inset-lighter m0 p16 flex-column flex-space-evenly">
+            <p>Real-time server status and player count</p>
+            <hr class="mn p16" />
+            <p>Gallery of previous community bases with world download</p>
+            <hr class="mn p16" />
+            <p>Blueprint library with search and sharing</p>
+            <hr class="mn p16" />
+            <p>Community suggestions and voting system</p>
+            <hr class="mn p16" />
+            <p>Community soundpack by Rodas</p>
+    </div>
+</div>
+</div>

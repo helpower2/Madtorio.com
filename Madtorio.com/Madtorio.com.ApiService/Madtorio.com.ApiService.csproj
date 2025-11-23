@@ -1,16 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>30f9d8cc-fd3d-4c66-a723-a11c36c6583c</UserSecretsId>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FactorioServer\FactorioServer.csproj" />
     <ProjectReference Include="..\Madtorio.com.ServiceDefaults\Madtorio.com.ServiceDefaults.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\Madtorio.com.Web\Madtorio.com.Web.csproj" />
   </ItemGroup>
 
 </Project>

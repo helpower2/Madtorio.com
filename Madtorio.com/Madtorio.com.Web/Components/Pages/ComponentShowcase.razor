@@ -1,0 +1,365 @@
+@page "/components"
+
+<PageTitle>Component Showcase</PageTitle>
+
+<div style="max-width: 1400px;">
+    <h1>Component Showcase</h1>
+    <p style="margin-bottom: 2rem;">
+        Comprehensive demonstration of all Factorio-styled UI components for Madtorio.com
+    </p>
+
+    <!-- BUTTONS SECTION -->
+    <div class="panel">
+        <h2>Buttons</h2>
+
+        <div class="component-row">
+            <div class="component-col">
+                <h3>Standard Button</h3>
+                <button class="btn">Standard Button</button>
+                <button class="btn disabled">Disabled Button</button>
+            </div>
+
+            <div class="component-col">
+                <h3>Primary Button</h3>
+                <button class="btn btn-primary">Confirm Action</button>
+                <button class="btn btn-primary disabled">Disabled Primary</button>
+            </div>
+        </div>
+
+        <div class="component-row" style="margin-top: 1rem;">
+            <button class="btn">← Back</button>
+            <button class="btn">Cancel</button>
+            <button class="btn btn-primary">Save Changes</button>
+            <button class="btn btn-primary">Build Factory →</button>
+        </div>
+    </div>
+
+    <!-- INPUT FIELDS SECTION -->
+    <div class="panel showcase-section">
+        <h2>Input Fields</h2>
+
+        <div class="demo-grid">
+            <div class="demo-item">
+                <label>Text Input</label>
+                <input type="text" placeholder="Enter server name...">
+            </div>
+
+            <div class="demo-item">
+                <label>Number Input</label>
+                <input type="number" value="32" min="1" max="100">
+            </div>
+
+            <div class="demo-item">
+                <label>Search Input</label>
+                <input type="search" placeholder="Search blueprints...">
+            </div>
+
+            <div class="demo-item" style="grid-column: span 2;">
+                <label>Textarea</label>
+                <textarea rows="3" placeholder="Enter description..."></textarea>
+            </div>
+
+            <div class="demo-item">
+                <label>Select Dropdown</label>
+                <select class="btn">
+                    <option>Normal Difficulty</option>
+                    <option>Hard Difficulty</option>
+                    <option>Death World</option>
+                    <option>Peaceful Mode</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKBOXES SECTION -->
+    <div class="panel showcase-section">
+        <h2>Checkboxes & Radio Buttons</h2>
+
+        <div class="component-row">
+            <div class="component-col">
+                <h3>Checkboxes</h3>
+                <label class="checkbox-label">
+                    <input type="checkbox" checked>
+                    <span class="checkbox"></span>
+                    <div>Enable auto-save</div>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <div>Allow enemy evolution</div>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" checked>
+                    <span class="checkbox"></span>
+                    <div>Show FPS counter</div>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" disabled>
+                    <span class="checkbox disabled"></span>
+                    <div>Disabled option</div>
+                </label>
+            </div>
+
+            <div class="component-col">
+                <h3>Radio Buttons</h3>
+                <label class="checkbox-label">
+                    <input type="radio" name="mode" checked>
+                    <span class="checkbox"></span>
+                    <div>Campaign Mode</div>
+                </label>
+                <label class="checkbox-label">
+                    <input type="radio" name="mode">
+                    <span class="checkbox"></span>
+                    <div>Sandbox Mode</div>
+                </label>
+                <label class="checkbox-label">
+                    <input type="radio" name="mode">
+                    <span class="checkbox"></span>
+                    <div>Multiplayer</div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- TABLE SECTION -->
+    <div class="panel showcase-section">
+        <h2>Data Tables</h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Level</th>
+                    <th>Online Time</th>
+                    <th>Factories</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Engineer_Alpha</td>
+                    <td>47</td>
+                    <td>156h 23m</td>
+                    <td>1,247</td>
+                    <td><span style="color: #5eb663;">● Online</span></td>
+                </tr>
+                <tr>
+                    <td>Factory_Master</td>
+                    <td>52</td>
+                    <td>203h 45m</td>
+                    <td>2,891</td>
+                    <td><span style="color: #5eb663;">● Online</span></td>
+                </tr>
+                <tr>
+                    <td>Conveyor_Pro</td>
+                    <td>38</td>
+                    <td>98h 12m</td>
+                    <td>876</td>
+                    <td><span style="color: #a6a6a6;">○ Offline</span></td>
+                </tr>
+                <tr>
+                    <td>Circuit_Wizard</td>
+                    <td>61</td>
+                    <td>287h 56m</td>
+                    <td>4,123</td>
+                    <td><span style="color: #5eb663;">● Online</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- PANELS SECTION -->
+    <div class="panel showcase-section">
+        <h2>Panels & Containers</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            <div class="panel-inset">
+                <h3 style="margin-top: 0; color: #ffe6c0;">Server Information</h3>
+                <div style="padding: 0.5rem 0;">
+                    <p><strong>Name:</strong> Madtorio Community</p>
+                    <p><strong>IP:</strong> <code>192.67.197.11</code></p>
+                    <p><strong>Players:</strong> 12/32</p>
+                    <p><strong>Uptime:</strong> 47 days</p>
+                </div>
+            </div>
+
+            <div class="panel-inset">
+                <h3 style="margin-top: 0; color: #ffe6c0;">Production Stats</h3>
+                <div style="padding: 0.5rem 0;">
+                    <p><strong>Iron Plates:</strong> 45.2k/min</p>
+                    <p><strong>Copper Plates:</strong> 38.7k/min</p>
+                    <p><strong>Green Circuits:</strong> 12.4k/min</p>
+                    <p><strong>Science Packs:</strong> 2.8k/min</p>
+                </div>
+            </div>
+
+            <div class="panel-inset">
+                <h3 style="margin-top: 0; color: #ffe6c0;">Quick Actions</h3>
+                <div style="padding: 0.5rem 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <button class="btn btn-primary" style="width: 100%;">Join Server</button>
+                    <button class="btn" style="width: 100%;">View Map</button>
+                    <button class="btn" style="width: 100%;">Server Rules</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLOT GRID SECTION -->
+    <div class="panel showcase-section">
+        <h2>Inventory Slots</h2>
+
+        <div class="slots">
+            <div class="slot"><div class="slot-empty"></div></div>
+            <div class="slot"><div class="slot-empty"></div></div>
+            <div class="slot"><div class="slot-empty"></div></div>
+            <div class="slot"><div class="slot-empty"></div></div>
+            <div class="slot"><div class="slot-empty"></div></div>
+            <div class="slot"><div class="slot-empty"></div></div>
+            <div class="slot"><div class="slot-empty"></div></div>
+            <div class="slot"><div class="slot-empty"></div></div>
+            <div class="slot"><div class="slot-empty"></div></div>
+            <div class="slot"><div class="slot-empty"></div></div>
+        </div>
+    </div>
+
+    <!-- STATUS INDICATORS SECTION -->
+    <div class="panel showcase-section">
+        <h2>Status & Feedback</h2>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div class="panel-inset" style="display: flex; justify-content: space-between; align-items: center;">
+                <span>Server Status:</span>
+                <span style="color: #5eb663; font-weight: bold;">● ONLINE</span>
+            </div>
+
+            <div class="panel-inset" style="display: flex; justify-content: space-between; align-items: center;">
+                <span>Factory Efficiency:</span>
+                <span style="color: #e39827; font-weight: bold;">87%</span>
+            </div>
+
+            <div>
+                <label>Build Progress</label>
+                <div class="progress-bar">
+                    <div class="progress-bar-bar" style="width: 65%;">
+                        <span class="progress-bar-text">65%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <label>Research Progress: Advanced Electronics</label>
+                <div class="progress-bar">
+                    <div class="progress-bar-bar" style="width: 42%;">
+                        <span class="progress-bar-text">42%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <span style="color: #5eb663;">✓ Build Complete</span>
+            <span style="color: #fe5a5a;">✗ Insufficient Resources</span>
+            <span style="color: #7dcaed;">ℹ Info Message</span>
+            <span style="color: #ffa200;">⚠ Warning Alert</span>
+        </div>
+    </div>
+
+    <!-- TABS SECTION -->
+    <div class="panel showcase-section">
+        <h2>Tabs</h2>
+
+        <ul class="tabs">
+            <li><a href="#" class="active">Production</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Logistics</a></li>
+            <li><a href="#">Combat <span class="badge">3</span></a></li>
+        </ul>
+
+        <div class="panel-inset" style="margin-top: -12px; padding: 1.5rem;">
+            <p>Tab content goes here. This demonstrates how tabs integrate with panel content.</p>
+        </div>
+    </div>
+
+    <!-- CODE EXAMPLES SECTION -->
+    <div class="panel showcase-section">
+        <h2>Usage Examples</h2>
+
+        <h3>Button Example</h3>
+        <button class="btn btn-primary">Confirm Build</button>
+       
+
+        <h3>Input Example</h3>
+        <input type="text" placeholder="Server name...">
+
+        <h3>Checkbox Example</h3>
+        <label class="checkbox-label">
+            <input type="checkbox" checked>
+            <span class="checkbox"></span>
+            Enable auto-save
+        </label>
+
+        <h3>Panel Example</h3>
+        <div class="panel">
+            <h2>Title</h2>
+            <div class="panel-inset">Content...</div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .showcase-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .component-row {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .component-col {
+        flex: 1;
+        min-width: 250px;
+    }
+
+        .component-col h3 {
+            font-size: 110%;
+            margin-bottom: 1rem;
+        }
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    .demo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .demo-item {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+    }
+
+        .demo-item input,
+        .demo-item select,
+        .demo-item textarea {
+            width: 100%;
+        }
+
+    pre {
+        background-color: #242324;
+        border: 2px solid #2e2623;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        font-family: monospace;
+        font-size: 90%;
+        overflow-x: auto;
+        line-height: 1.4;
+    }
+</style>

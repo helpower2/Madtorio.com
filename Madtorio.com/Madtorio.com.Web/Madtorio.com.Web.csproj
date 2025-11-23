@@ -4,14 +4,22 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FactorioServer\FactorioServer.csproj" />
     <ProjectReference Include="..\Madtorio.com.ServiceDefaults\Madtorio.com.ServiceDefaults.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="9.5.0" />
+    <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="9.5.2" />
+    <PackageReference Include="FactorioSharp.Instrumentation" Version="0.3.6" />
+    <PackageReference Include="FactorioSharp.Rcon" Version="0.3.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
 </Project>

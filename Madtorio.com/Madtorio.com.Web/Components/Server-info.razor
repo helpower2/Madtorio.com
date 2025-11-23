@@ -1,0 +1,63 @@
+﻿@using Madtorio.com.Web.Api
+@using Madtorio.com.Web.Api.Models
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+@inject ServerInfoApi ServerApi;
+
+@code {
+    private ServerInfo serverInfo = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        serverInfo = await ServerApi.GetServerInfoAsync();
+    } 
+}
+
+<div class="panel box-info m0 flex-column">
+    <h2>Server information 
+        <span class="text-right">
+        @if (serverInfo.IsUp)
+            {
+                <span style="color:#5eb663">Server up</span>
+            }
+            else
+            {
+                <span style="color:#fe5a5a">Server Down</span>
+            }
+        </span>
+    </h2>
+    <div class="panel-inset-lighter m0">
+        <dl>
+            <dt>Ip:</dt>
+            <dd class="text-right">@serverInfo.Uri</dd>
+        </dl>
+        <hr class="mn p16" />
+        @if (serverInfo.IsUp is false)
+        {
+            <div class="text-center">Server down</div>
+        }
+        else
+        {    
+            <dl>
+                <dt>Player count:</dt>
+                <dd class="text-right">@serverInfo.OnlinePlayerCount</dd>
+            </dl>
+            <hr class="mn p16" />
+            <dl>
+                <dt>Players online:</dt>
+                <dd class="text-right">
+                    <p>
+                        @foreach (var player in serverInfo?.playersOnline)
+                        {
+                            @player
+                            <br />
+                        }
+                    </p>
+                </dd>
+            </dl>
+            <hr class="mn p16" />
+            <p class="map-string"> map string: @serverInfo.Mapstring</p>
+        }
+    </div>
+</div>
