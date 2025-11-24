@@ -43,8 +43,8 @@ app.MapGet("/serverinfo", async (FactorioServerOptions serveroptions, FactorioSe
     {
         return Results.Problem("Server URI or RCON password is not configured", statusCode: 500);
     }
-    var serverInfo = new ServerInfo();
-    serverInfo.Uri = serveroptions.RconUri.Host;
+    var serverInfo = new ServerInfo() { Uri = serveroptions.RconUri.Host};
+    //serverInfo.Uri = serveroptions.RconUri.Host;
     {
         Debug.WriteLine("/serverinfo");
             serverInfo.Mapstring = await factorioServerInfo.GetMapstring();
