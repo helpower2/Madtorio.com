@@ -11,7 +11,6 @@
   <ItemGroup>
     <ProjectReference Include="..\FactorioServer\FactorioServer.csproj" />
     <ProjectReference Include="..\Madtorio.com.ServiceDefaults\Madtorio.com.ServiceDefaults.csproj" />
-    <ProjectReference Include="..\Madtorio.com.Web\Madtorio.com.Web.csproj" />
   </ItemGroup>
 
 </Project>

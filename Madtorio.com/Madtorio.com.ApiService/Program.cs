@@ -2,7 +2,7 @@ using FactorioServer;
 using FactorioServer.Interfaces;
 using FactorioServer.models;
 using FactorioSharp.Rcon;
-using Madtorio.com.Web.Api.Models;
+using Madtorio.com.ApiService.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.VisualBasic;
 using OneOf.Types;
